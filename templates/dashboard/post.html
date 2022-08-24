@@ -1,0 +1,15 @@
+{% extends 'dashboard/layout.html' %}
+
+{% block body %}
+    
+<h1>Add New Post</h1>
+
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+      <label for="skill" class="form-label">Select Post</label>
+      <input type="file" class="form-control" id="skill" name="file" aria-describedby="emailHelp" placeholder="PYTHON">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock  %}

@@ -1,0 +1,49 @@
+{% extends 'dashboard/layout.html' %}
+
+{% block body %}
+    
+<h1>BACKEND-SKILLS</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Skill</th>
+        <th scope="col">Level</th>
+        <!-- <th scope="col">Value</th> -->
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        {% for post in posts %}
+        <tr>
+
+        <th scope="row">{{ post.sno }}</th>
+        <td>{{ post.skill }}</td>
+        <td>{{ post.level }}</td>
+        <!-- <td>{{ post.val }}</td> -->
+        <td><a href="/del/backend/{{ post.sno }}"><button class="btn btn-danger">Delete</button></a></td>
+      </tr>
+
+        {% endfor %}
+
+        
+      
+    </tbody>
+  </table>
+  <hr>
+  <hr>
+
+  <form action="/backend" method="post">
+    <div class="mb-3">
+      <label for="skill" class="form-label">Back-End Skill</label>
+      <input type="text" class="form-control" id="skill" name="skill" aria-describedby="emailHelp" placeholder="PYTHON">
+    </div>
+    <div class="mb-3">
+      <label for="level" class="form-label">Level</label>
+      <input type="text" class="form-control" name="level" id="level" placeholder="Beginner/ Intermediate/ Expert">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock  %}
