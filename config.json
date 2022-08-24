@@ -1,0 +1,21 @@
+{
+    "params" : {
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/omkar",
+        "prod_uri":"mysql://9cgzV1vZr2:JOiseaJWnR@remotemysql.com/9cgzV1vZr2",
+        "admin_user" : "omkar@admin",
+        "admin_password" : "techomkar@07",
+        "about_txt" : "Hey as you all know my name is Sujal Nikam and I am a Graphics Designer and I had designed many of the designs you can check them in the portfolio section!",
+        "workyear" : "1.5",
+        "projects" : "3",
+        "customers" : "3",
+        "whatsapp" : "+917248965484",
+        "instagram" : "https://www.instagram.com/techomkar",
+        "twitter" : "https://www.twitter.com/TechOmkar",
+        "github" : "https://github.com/WEB-L00P",
+        "behance" : "https://www.behance.net/omkarbhosale07",
+        "dribbble" : "https://dribbble.com/WebLoop"
+    }
+
+
+}
