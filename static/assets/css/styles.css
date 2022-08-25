@@ -12,7 +12,7 @@
       Teal: hsl(174, 63%, 62%)
   */
 
-  --hue: 207;
+  --hue: 174;
   --sat: 90%;
   --lig: 61%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
@@ -423,6 +423,9 @@ body.dark-theme {
   text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+}
+.promo{
+  color: red;
 }
 
 /*=============== SCROLL BAR ===============*/
